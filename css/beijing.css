@@ -1,0 +1,195 @@
+main#beijing {
+    display: block;
+    margin-left:10vw;
+    margin-right: 10vw;
+}
+
+main#beijing p {
+    text-align: left;
+    text-indent: 5vw;
+    line-height: 2em;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+main#beijing article {
+    display: block;
+    padding: 5vw;
+}
+
+main#beijing ol li {
+    text-indent: 0.5vw;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+main#beijing img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+main#beijing img#route {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    width: 15vw;
+    border-radius: 0px;
+}
+
+video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main#beijing h3 {
+    text-indent: 0vw;
+    text-align: center;
+    margin-top: 10px;
+}
+
+main#beijing h3:first-of-type {
+    margin-top: 0px;
+}
+
+main#beijing h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+main#beijing h3#videoname {
+    padding-top: 0px;
+}
+
+@media (min-width: 601px) {
+    main#beijing #beijing-main-img {
+        width: 55%;
+    }
+
+    main#beijing img:not(#route){
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 60%;
+    }
+
+    main#beijing ol li {
+        font-size: 1.2em;
+    }
+
+    main#beijing img#map {
+        width: 100%;
+    }
+
+    main#beijing img#BachBeijing {
+        width: 40%;
+    }
+
+    main#beijing h3 {
+        font-size: 2.5vw;
+    }
+
+    main#beijing h2 {
+        font-size: 2vw;
+    }
+
+    video {
+        width: 50vw;
+    }
+
+    main#beijing img#snow_park1, main#beijing img#snow_park2 {
+        width: 100%;
+    }
+
+    #second {
+        max-width: 48%;
+    }
+
+    .table {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:600px) {
+    main#beijing #beijing-main-img {
+        width: 80%;
+    }
+
+    main#beijing ol li {
+        font-size: 0.8em;
+    }
+
+    main#beijing h3 {
+        font-size: 5.5vw;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    main#beijing h2 {
+        font-size: 4vw;
+    }
+
+    main#beijing {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    main#beijing img:not(#route){
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    main#beijing img#map {
+        width: 100%;
+    }
+
+    video {
+        width: 100%;
+    }
+}
+
+.popup:not(:target) {
+    display: none;
+  }
+  
+  .popup:target {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.8);
+  }
+  .full-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .close {
+    position: absolute;
+    transition: none;
+    top: 20px;
+    right: 20px;
+    height: 70px;
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.close:hover {
+    transition: none;
+}
+
+#games_map {
+    transition: 0.65s ease-out;
+}
+
+#games_map:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease-out;
+}

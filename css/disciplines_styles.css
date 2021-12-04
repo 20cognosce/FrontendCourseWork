@@ -1,0 +1,134 @@
+article {
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+article#disciplines p {
+    line-height: 1.5em;
+    margin-top: 50px;
+    padding: 0;
+}
+
+h3 {
+    text-align: left;
+    text-indent: 5vw;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 1.5em;
+}
+
+h3:not(:first-of-type) {
+    padding-top: 50px;
+}
+
+main#disciplines h1 {
+    text-align: left;
+    font-size: 4.5vw;
+    margin-bottom: 25px;
+}
+
+main#disciplines img {
+    position: relative;
+    width:100%;
+    margin-top: 20px;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+main a {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 100%;
+    transition: .5s;
+}
+a p{
+	position: absolute;
+    top: 0;
+    width: 100%;
+    letter-spacing: 0.05em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+    font-weight: 800;
+}
+
+main a:hover {
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+.table {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+#first {
+    max-width: 23%;
+    
+}
+
+#second {
+    max-width: 45%;
+}
+
+@media (min-width: 1251px) {
+    a p {
+        top: 100px;
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width:1250px) {
+    #first {
+        max-width: 46%;
+    }
+
+    #second {
+        max-width: 88%;
+    }
+
+    .table {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-around;
+    }
+    a p {
+        top: 120px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width:650px) {
+    #first {
+        max-width: 88%;
+    }
+
+    .table {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    a p {
+        top: 50px;
+    }
+
+    h3 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+  
+main#disciplines {
+    margin-left:10vw;
+    margin-right: 10vw;
+}

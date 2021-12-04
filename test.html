@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="image/png" rel="shortcut icon" href="./sources/favicon.png">
+    <title>Olympic games reference page</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="./css/main_styles.css">
+    <link rel="stylesheet" href="./css/header_nav_styles.css">
+    <link rel="stylesheet" href="./css/history_styles.css">
+    <link rel="stylesheet" href="./css/disciplines_styles.css">
+    <link rel="stylesheet" href="./css/records.css">
+    <link rel="stylesheet" href="./css/beijing.css">
+    <link rel="stylesheet" href="./css/test.css">
+
+    <script src="./script.js" defer></script>
+  </head>
+  
+  <body>
+    <header id="other">
+        <a href="index.html">
+            <img class="logo" id="other" src="./sources/logo.png" alt="Logo">
+        </a>
+        <nav id="other">            
+            <a href="history.html" class="button-style id1"><h1 class="heading">История</h1></button-style></a>
+            <a href="disciplines.html" class="button-style id2"><h1 class="heading">Дисциплины</h1></a>
+            <a href="regulations.html" class="button-style id3"><h1 class="heading">Регламент</h1></a>
+            <a href="records.html" class="button-style id4"><h1 class="heading">Рекорды</h1></a>
+            <a href="beijing.html" class="button-style id5"><h1 class="heading">Beijing 2022</h1></a>
+            <a href="test.html" class="button btn-flip" data-back="Click!" data-front="Тест!"></a>
+        </nav>
+
+        <nav>
+            <div class="container">
+                    <input id="responsive-menu" type="checkbox">
+                    <label for="responsive-menu">Menu<span id="menu-icon"></span></label>
+                <ul>
+                    <li><a href="history.html" class="button-style id1"><h1 class="heading">История</h1></a></li>
+                    <li><a href="disciplines.html" class="button-style id2"><h1 class="heading">Дисциплины</h1></a></li>
+                    <li><a href="regulations.html" class="button-style id3"><h1 class="heading">Регламент</h1></a></li>
+                    <li><a href="records.html" class="button-style id4"><h1 class="heading">Рекорды</h1></a></li>
+                    <li><a href="beijing.html" class="button-style id5"><h1 class="heading">Beijing 2022</h1></a></li>
+                    <li><a href="test.html" class="button btn-flip" data-back="Click!" data-front="Тест!"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="test">
+        <h0 class="heading">Тест на знание темы<br>Олимпийских игр!</h0>
+        <article>     
+            <button class ="glow-on-hover" id= "start-btn" onclick="start()"><h2 id="go">Начать!</h2></button>
+
+            <div id="quiz">
+                <h2 id="progress"></h2>
+                <h2 id="questions"></h2>
+                <ul id>
+                  <li><button class ="glow-on-hover" id="btn0"><h3><span id="choice0"></span></h3></button></li>
+                  <li><button class ="glow-on-hover" id="btn1"><h3><span id="choice1"></span></h3></button></li>
+                  <li><button class ="glow-on-hover" id="btn2"><h3><span id="choice2"></span></h3></button></li>
+                  <li><button class ="glow-on-hover" id="btn3"><h3><span id="choice3"></span></h3></button></li>
+                  <li><button class ="glow-on-hover" id="btn4"><h3><span id="choice4"></span></h3></button></li>
+                </ul>
+              </div>
+        
+            <script src="./js/main.js"></script>
+            <script src="./js/questions.js"></script>
+            <script src="./js/app.js"></script>
+        </article>
+    </main>
+  </body>
+</html>

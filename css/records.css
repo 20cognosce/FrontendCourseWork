@@ -1,0 +1,122 @@
+main#records {
+    margin-left:10vw;
+    margin-right: 10vw;
+}
+
+main#records .column {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main#records p {
+    text-indent: 5vw;
+    line-height: 1.5em;
+}
+
+main#records article {
+    padding: 5vw;
+}
+
+main#records #records-main-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+main#records img:not(.table img){
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    border-radius: 15px;
+}
+
+main#records h3 {
+    text-indent: 0vw;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+@media (min-width: 601px) {
+    main#records #records-main-img {
+        width: 65%;
+    }
+
+    main#records img:not(.table img){
+        width: 40%;
+    }
+
+    main#records img#latinina2 {
+        width: 25vw;
+    }
+
+    main#records img#phelps_win, main#records img#biergen2  {
+        width: 60%;
+    }
+
+    main#records img#phelps, main#records img#biergen {
+        display:block;
+        width: 60%;
+    }
+
+    img#milon {
+        width: 25vw;
+        border-radius: 15px;
+    }
+
+    main#records .table {
+        margin-top: 20px;
+    }
+
+    main#records h3 {
+        font-size: 2.2vw;
+    }
+}
+
+@media (max-width:600px) {
+    main#records #records-main-img {
+        width: 80%;
+    }
+
+    main#records #second {
+        max-width: 88%;
+    }
+
+    main#records .table {
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    main#records h3 {
+        font-size: 5vw;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    main#records {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    main#records img#phelps, main#records img#biergen {
+        display:block;
+        width: 90%;
+    }
+
+    main#records img#latinina2, main#records img#milon {
+        width: 60vw;
+        border-radius: 15px;
+    }
+
+    main#records img#milon {
+        margin-top: 20px;
+    }
+}

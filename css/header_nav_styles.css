@@ -1,0 +1,344 @@
+header#other {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 999;
+    height: 15vw;
+    max-height: 55px;
+    border-radius: 30px;
+    padding: 20px;
+    color: white;
+    background-color: rgba(51,51,51, 0.95); 
+}
+
+nav#other {
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 1.2vw;
+}
+
+nav#other .heading, .btn-flip {
+    margin-right: 0px;
+    padding: 12px;
+}
+nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+main#other {
+    position: relative;
+    margin-top: 30px;
+}
+
+@media (min-width: 1201px) {
+    .button-style {
+        margin-right:30px;
+    }
+    .btn-flip {
+        font-size: 1.6vw;
+        width: 10vw;
+        margin:10px;
+    }
+
+    .btn-flip::before {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .btn-flip::after {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    header#other {
+        height: 30vw;
+        max-height: 200px;
+    }
+
+    nav#other {
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    nav a {
+        justify-content: left;
+    }
+
+    nav#other .heading {
+        font-size: 3vw;
+    }
+
+    header .logo {
+        height: 100px;
+    }
+
+    .btn-flip {
+        font-size: 3.2vw;
+        width: 25%;
+        margin:10px;
+        margin-left: 10px;
+        padding-right: 30px;
+    }
+
+    nav#other:not(.btn-flip) {
+        justify-content: center;
+    }
+    .button-style {
+        white-space: nowrap;
+    }
+    
+    .btn-flip::before {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .btn-flip::after {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (min-width: 601px) {
+    .container {
+        display: none;
+    }
+    header .heading {
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    header#other {
+        max-height: 100px;
+    }
+
+    nav#other a {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    .button-style {
+        justify-content: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        width: 120px;
+    }
+
+    .btn-flip {
+        padding-bottom: 50px;
+        font-size: 6vw;
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    header .logo {
+        height: 18vw;
+        margin-left: 0px;
+    }
+    .button-style {
+        margin-right: 0px;
+    }
+
+    .btn-flip {
+        font-size: 8vw;
+    }
+}
+/************************************************************************************************************/
+/************************************************************************************************************/
+/************************************************************************************************************/
+.container label {
+    font-weight: bolder;
+    text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+                  #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+}
+
+.container {
+    position: absolute;
+    align-items: flex-end;
+    right: 5vw;
+    top: 25%;
+    width: 140px;
+}
+
+ul .heading {
+    margin-right: 0px;
+}
+
+nav input {
+    opacity: 0;
+}
+
+nav label {
+
+    display: block;
+    font: 2em/1 'Inter', sans-serif;
+    padding: 0px;
+}
+
+/* Hamburger Icon */
+#menu-icon,
+#menu-icon:before,
+#menu-icon:after {
+    background: #ffffff;
+    border-radius: 0.05em;
+    height: 0.2em;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+
+#menu-icon {
+    float:right;
+    margin: 0.4em 0;
+    max-width: 1em;
+    position: relative;
+}
+
+#menu-icon:before,
+#menu-icon:after {
+    content: '';
+    left: 0;
+    position: absolute;
+}
+
+#menu-icon:before {
+    top: -0.4em;
+}
+
+#menu-icon:after {
+    bottom: -0.4em;
+}
+
+nav input[type=checkbox]:checked + label #menu-icon {
+    background: transparent;
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:after {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+nav ul {
+    display: none;
+    position: fixed;
+    list-style: none;
+    line-height: 2.5em;
+    max-height: 0;
+    opacity: 0;
+    background-color: rgba(51,51,51, 0.95); 
+    border-radius: 30px;
+    top: 10rem;
+    left:0;
+    padding-left:0px;
+    width: 100%;
+}
+
+ul li {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+nav input:checked ~ ul {
+    max-height: inherit;
+    display: block;
+    opacity: 1;
+}
+
+nav ul a:hover {
+    text-decoration: none;
+}
+
+.button-style {
+    box-shadow: 0 4px 15px 0 rgba(22, 62, 148, 0.671);
+    background-size: 300% 100%;
+    transition: all .4s ease-in-out;
+    border-radius: 30px;
+    justify-content: center;
+    margin: 10px;
+}
+
+.button-style:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+    transform: scale(1.07);
+}
+
+.id1 {
+    background-image: linear-gradient(to right, cyan, blue, blue, cyan);
+}
+
+.id2 {
+    background-image: linear-gradient(to right, grey, black, black, grey);
+}
+
+.id3 {
+    background-image: linear-gradient(to right, red, maroon, maroon, red);
+}
+
+.id4 {
+    background-image: linear-gradient(to right, yellow, goldenrod, goldenrod, yellow);
+}
+
+.id5 {
+    background-image: linear-gradient(to right, limegreen, olivedrab, olivedrab, limegreen);
+}
+
+.btn-flip {
+    display:flex;
+    opacity: 1;
+    padding-left: 0px;  
+    text-align: center;
+    align-items: center;
+    
+}
+  .btn-flip:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+  .btn-flip:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+}
+  .btn-flip:after {
+    position: absolute;  
+    left:0; top:0; right: 0; bottom:0;
+    opacity: 0;
+    transition: 0.5s;
+    background: linear-gradient(pink, royalblue);
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.btn-flip:before {
+    position: absolute;
+    left:0; top:0; right: 0; bottom:0;
+    opacity: 1;
+    transition: 0.5s;
+    background: linear-gradient(royalblue, pink);
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+}
