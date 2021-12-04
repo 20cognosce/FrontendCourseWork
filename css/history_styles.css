@@ -8,6 +8,13 @@ main#history h1 {
     font-size: 4.5vw;
 }
 
+h0 {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
 article:first-of-type {
     padding: 30px;
     display: block;
@@ -130,6 +137,12 @@ ol a:hover{
     }
 }
 
+@media (min-width: 601px) {
+    h0 {
+        font-size: 5vw;
+    }
+}
+
 @media (max-width: 600px) {
     main#history {
         margin-left:2vw;
@@ -139,6 +152,10 @@ ol a:hover{
     main#history p {
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    h0 {
+        font-size: 8vw;
     }
 
     #Palaestra, #archaeologist, #pierre_de_coubertin, #pierre_grave, #logo-img, #flag{
@@ -173,14 +190,6 @@ ol a:hover{
     h3 {
         font-size: 3.5vw;
     }
-}
-
-h0 {
-    margin-top: 25px;
-    margin-bottom: 30px;
-    display: flex;
-    font-size: 5vw;
-    justify-content: center;
 }
 
 #main-img {
