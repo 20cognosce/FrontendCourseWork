@@ -107,7 +107,19 @@ main a:hover {
     }
 }
 
+@media (min-width: 651px) {
+    main#disciplines {
+        margin-left:10vw;
+        margin-right: 10vw;
+    }
+}
+
 @media (max-width:650px) {
+    main#disciplines {
+        margin-left:2vw;
+        margin-right: 2vw;
+    }
+
     #first {
         max-width: 88%;
     }
@@ -126,9 +138,4 @@ main a:hover {
         padding-left: 10px;
         padding-right: 10px;
     }
-}
-  
-main#disciplines {
-    margin-left:10vw;
-    margin-right: 10vw;
 }

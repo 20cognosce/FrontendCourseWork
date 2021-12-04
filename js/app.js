@@ -27,6 +27,7 @@ function createQuizPage() {
     for (var i = 0; i < choices.length; i++) {
       var element = document.getElementById("choice" + i);
       element.innerHTML = choices[i];
+
       //Вызов функции guess с id кнопки и выбранным вариантом ответа в виде параметров
       guess("btn" + i, choices[i]);
     }
