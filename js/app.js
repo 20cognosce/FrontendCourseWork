@@ -1,4 +1,4 @@
-var Quiz = new quiz(questions);
+var Quiz = new quiz();
 
 function start() {
   //Находим кнопку с id "start-btn" и при нажатии на нее вызываем функцию start
